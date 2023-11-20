@@ -27,6 +27,7 @@ public class ex04 {
         player1.game = (int)(Math.random() * 3+1);
         player2.game = (int)(Math.random() * 3+1);
 
+        //switch 문으로 플레이어가 어떤 것을 냈는지 보여주기
         switch(player1.game)
         {
             case 1 :
@@ -53,6 +54,7 @@ public class ex04 {
                 break;
         }
 
+        //두 플레이어가 비기지 않을때까지 랜덤으로 숫자 생성
         while(Objects.equals(player1.game, player2.game)){
             System.out.println("무승부");
 
@@ -114,15 +116,5 @@ public class ex04 {
                 }
             }
         }
-
-
-
-
-
-
-
-
-
-
     }
 }
