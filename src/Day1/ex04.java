@@ -1,11 +1,7 @@
-package Day1;
+package day1;
 
 import java.util.Objects;
 
-class Player{
-    String name;
-    Integer game;
-}
 public class ex04 {
     public static void main(String[] args) {
         // 1은 가위, 2는 바위, 3은 보
@@ -88,7 +84,6 @@ public class ex04 {
             }
         }
 
-        if(!Objects.equals(player1.game, player2.game)){
             //둘 중에 이긴 사람 이름 출력
             if(player1.game == 1){
                 if(player2.game == 2){
@@ -115,6 +110,6 @@ public class ex04 {
                     System.out.println("1번 플레이어 승");
                 }
             }
-        }
+
     }
 }
