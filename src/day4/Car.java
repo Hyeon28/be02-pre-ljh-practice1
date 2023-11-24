@@ -13,7 +13,9 @@ public class Car {
         position++;
         System.out.println("한칸 전진!🏎️");
     }
-
+    public void movePos2(){
+        position++;
+    }
     public int getPosition() {
         return position;
     }
