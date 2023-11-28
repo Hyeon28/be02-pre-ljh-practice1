@@ -24,12 +24,16 @@ public class FileClient {
             FileOutputStream fileOutputStream = new FileOutputStream("c:\\test\\"+msg+"get.txt");
 
             InputStream is = clientSocket.getInputStream();
+            //BufferedInputStream
             byte[] bytes = is.readAllBytes();
 
             for (int i = 0; i < bytes.length; i++) {
                 fileOutputStream.write(bytes[i]);
             }
 
+            is.close();
+            bw.close();
+            clientSocket.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
